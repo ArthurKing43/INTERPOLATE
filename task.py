@@ -1,17 +1,15 @@
-n = input("сколько:")
-list_1 = []
-for q in range(0, int(n)):
-    x = input()
-    List.append(x)
-print(List)
-for i in range(0, len(List)-1):
-    if List[i+1] <= List[i]:
+N = open('NuMBeRS', 'r')
+List = N.readline()
+List_1 = List.split(' ')
+print(List_1)
+for i in range(0, len(List_1) - 1):
+    if List_1[i + 1] <= List_1[i]:
         for k in range(i, -1, -1):
-            if List[k+1] <= List[k]:
-                t = List[k+1]
-                List[k+1] = List[k]
-                List[k] = t
-print(List)
+            if List_1[k + 1] <= List_1[k]:
+                t = List_1[k + 1]
+                List_1[k + 1] = List_1[k]
+                List_1[k] = t
+print(List_1)
 '''3/ 8 2 1 4 i=0
 
 3 8/ 2 1 4 i=1
