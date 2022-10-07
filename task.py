@@ -2,10 +2,9 @@ N = open('NuMBeRS', 'r')
 S = N.readline()
 S_1 = S.split(' ')
 S_2 = []
-for char in S_1:
-     x = int(char)
+for j in S_1:
+     x = int(j)
      S_2.append(x)
-
 for i in range(0, len(S_2) - 1):
     if S_2[i + 1] <= S_2[i]:
         for k in range(i, -1, -1):
